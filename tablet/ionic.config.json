@@ -1,0 +1,7 @@
+{
+  "name": "tablet",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
