@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Add/Edit ToDo</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+<div class="item-div">
+  <ion-item lines="none">
+    <ion-input placeholder="Enter Title" type="text" [(ngModel)]="data.title"></ion-input>
+  </ion-item>
+
+  <ion-item lines="none">
+
+    <ion-textarea placeholder="Type description" [(ngModel)]="data.description"></ion-textarea>
+  </ion-item>
+
+  <ion-button color="success" (click)="save()">save</ion-button>
+</div>
+</ion-content>
