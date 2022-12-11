@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 
+
+//for local storage of data input.
 @Injectable({
   providedIn: 'root'
 })

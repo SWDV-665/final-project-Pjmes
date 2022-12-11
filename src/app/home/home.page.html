@@ -12,6 +12,7 @@
   </div>
 
  <ion-list>
+  <!--Slider for editing. On click feeds to the edit function to update the item of data-->
   <ion-item-sliding *ngFor="let i of this.dataService.items">
     <ion-item color="primary"  (click)="edit(i)">
       <!--Displays the title and the description in each item labeled.-->
@@ -25,6 +26,7 @@
       </ion-label>
     </ion-item>
 
+    <!--Setup Delete option on the end of the slider-->
     <ion-item-options>
       <ion-item-option color="danger" (click)="deleteTodo(i)">Delete</ion-item-option>
     </ion-item-options>
